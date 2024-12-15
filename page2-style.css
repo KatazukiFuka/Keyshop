@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .link {
+    text-decoration: none; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #03ac0e;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.nav-links .btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #03ac0e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-links .btn:hover {
+    background-color: #028b0d;
+}
+
+.cart-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #bbb;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    flex: 1 1 45%;  /* More flexible size for image section */
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+}
+
+
+.details-section {
+    flex: 1 1 50%; 
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.details-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.details-section .rating {
+    color: #ffcc00;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #2c2c2c;
+    padding-bottom: 0.5rem;
+}
+
+.details-section .price {
+    font-size: 20px;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.details-section .discount {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.details-section .options {
+    margin: 20px 0;
+}
+
+.details-section .options label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+.details-section .options select, .details-section .options input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+.details-section .buy-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.details-section .buy-section button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #38b000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.details-section .buy-section button:hover {
+    background-color: #2c8700;
+}
+
+.details-section .buy-section .wishlist {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+.details-section .buy-section .wishlist:hover {
+    background-color: #444;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .link .logo{
+        font-size: 0px;
+    }
+
+    .nav-links a {
+        position: relative;
+        left: 25px;
+        font-size: 10.9px;
+        margin: 5px;
+    }
+
+    .nav-links .btn {
+        position: relative;
+        left: 50px;
+        padding: 1px 8px;
+    }
+
+    .search-bar input {
+        width: 95%;
+        margin: 5px;
+    }
+    .cart-location span{
+        font-size: 0px;
+    }
+
+    .navbar .logo{
+        font-size: 20px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+    .navbar .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar .nav-links {
+        flex-direction: row;
+        display: flex !important;
+        gap: 15px;
+    }
+
+    .nav-links .btn {
+        position: relative;
+        left: 25px;
+        padding: 1px 8px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links a {
+        position: relative;
+        left: 25px;
+    }
+
+    .navbar .link .logo{
+        font-size: 1.5em;
+    }
+}
